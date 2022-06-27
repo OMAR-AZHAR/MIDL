@@ -19,7 +19,7 @@ body {
  
 }
 .px{
-  width: 75%;
+  width: 78%;
   height: 260px;
   margin-left: 55px;
 }
@@ -46,9 +46,9 @@ body {
   min-height: 105vh;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .showcase video{
  
@@ -58,13 +58,25 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-opacity: 0.8;
+/* opacity: 0.8; */
 }
 .textonimg{
 position: absolute;
 z-index: 10;
 font-family: 'Open Sans', sans-serif;
 font-weight: 800;
+
+}
+.carousel-inner{
+  border-radius: 12px;;
+}
+.slider-caption{
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 0% !important;
+  left: 0% !important;
+  right: 0% !important;
+  
 
 }
 .overlay{
@@ -88,8 +100,8 @@ font-weight: 800;
 }
 .cc:hover{
   background: #0b4d86;
-  border-color: #0b4d86;
-  letter-spacing: 0.5px;
+  border-color: #61a3dd;
+  letter-spacing: 0px;
 }
 /* .wall{
    border-left: 1px solid #bfdbf7; 
@@ -588,15 +600,16 @@ section {
   padding: 60px 0;
   overflow: hidden;
   background: url("../img/back/AI-Medical-imaging.png");
-  background-size: cover;
+  background-size: contain;
 
-  border-bottom:1px solid rgb(56, 54, 54) ;
+  /* border-bottom:1px solid rgb(56, 54, 54) ; */
 }
+
 
 .section-bg {
   background-color: #242323;
-  border-top:1px solid rgb(56, 54, 54) ;
-  border-bottom:1px solid rgb(56, 54, 54) ;
+  /* border-top:1px solid rgb(56, 54, 54) ;
+  border-bottom:1px solid rgb(56, 54, 54) ; */
   
 }
 
@@ -918,8 +931,8 @@ section {
 .counts {
   /* background: rgb(36, 35, 35); */
   padding: 70px 0 60px;
-  border-top: 1px solid rgb(61, 59, 59) ;
-  border-bottom: 1px solid rgb(61, 59, 59) ;
+  /* border-top: 1px solid rgb(61, 59, 59) ;
+  border-bottom: 1px solid rgb(61, 59, 59) ; */
 }
 .counts .count-box {
   padding: 30px 30px 25px 30px;
@@ -1015,7 +1028,7 @@ section {
 }
 .products .icon-box:hover {
   background: #0b4d86;
-  border-color: #0b4d86;
+  border-color: #50a0e6;
   letter-spacing: 0.5px;
 }
 .products .icon-box:hover .icon {
@@ -1045,15 +1058,46 @@ letter-spacing: 2px;
 background-color: #032e57;
 
 }
+.bdm{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+  @media only screen and (max-width: 991px) {
+    .bdm {
+     margin-left: 0%;
+    }
+  }
+
 .services{
   padding: 0;
   margin-left: 25%;
   max-width: 50% ;
   word-wrap: unset !important;
-  white-space: nowrap !important
+  /* white-space: nowrap !important */}
 
+  @media only screen and (max-width: 991px) {
+.card-img{
+  width: 25%;
 }
 
+}
+/* @media only screen and (min-width: 200px) {
+  .card-img{
+    width: 30%;
+  }
+  
+  } */
+@media screen and (min-width: 767px) {
+  .serv {
+    white-space: nowrap;
+    
+  }
+}
+@media screen and (min-width: 1000px) {
+  .serv {
+    font-size: 22px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Appointments
@@ -1193,8 +1237,8 @@ background-color: #032e57;
 --------------------------------------------------------------*/
 .doctors {
   background-color: #242323;
-  border-top:1px solid rgb(56, 54, 54) ;
-  border-bottom:1px solid rgb(56, 54, 54) ;
+  /* border-top:1px solid rgb(56, 54, 54) ;
+  border-bottom:1px solid rgb(56, 54, 54) ; */
   
 }
 .doctors .member {
@@ -1340,12 +1384,128 @@ background-color: #032e57;
 @media (max-width: 1200px) {
   .faq .faq-list {
     padding: 0;
+    
   }
 }
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.slick-slide img
+{
+  display: block;
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
   margin: 20px;
@@ -1446,21 +1606,37 @@ border-radius: 8px;
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
 }
+.bdm-2
+ {
+   margin-left: 25%; 
+   margin-right: 25%; 
+}
 
+@media (max-width: 300px){
+  .bdm-2{
+    margin-left: 0%;
+  }
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background-image: url(/assets/img/back/AI-Medical-imaging.png);
+  background-size: cover;
+  padding-bottom: 1%;
+}
 .contact .info {
   width: 100%;
   /* background: #fff; */
 }
 .contact .info i {
+  cursor: pointer;
   font-size: 20px;
-  color: #1977cc;
+  color: #147bd4;
   float: left;
   width: 44px;
   height: 44px;
-  background: #d6e9fa;
+  background: #c7e1f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1493,6 +1669,7 @@ border-radius: 8px;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
+  border-radius: 2px;
 }
 .contact .php-email-form .error-message {
   display: none;
@@ -1532,7 +1709,7 @@ border-radius: 8px;
   animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 8px;
   box-shadow: none;
   font-size: 14px;
 }
