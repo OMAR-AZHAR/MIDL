@@ -89,6 +89,51 @@ font-weight: 800;
   /* mix-blend-mode: overlay; */
 }
 
+.c-serv {
+  position: relative;
+  /* width: 50%; */
+}
+
+.img-serv {
+  display: block;
+ width: 100%;
+  height: auto;
+}
+.img-serv-2{
+  max-height: 198px;
+}
+.overlay-serv {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgb(0, 0, 0,0.2);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  /* opacity: 0.9; */
+
+ 
+}
+
+.c-serv:hover .overlay-serv {
+  width: 100%;
+  left: 0;
+}
+
+.text-serv {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
 .cc{
   color: #fff ;
   background-color: #032e57;
@@ -103,9 +148,11 @@ font-weight: 800;
   border-color: #61a3dd;
   letter-spacing: 0px;
 }
-/* .wall{
-   border-left: 1px solid #bfdbf7; 
-} */
+
+.wall:hover{
+   border-left: 1px solid #b0d2f5; 
+   transition: .9s ease-in-out;
+}
 .dicom-title{
   font-weight: 800;
 }
@@ -600,7 +647,7 @@ section {
   padding: 60px 0;
   overflow: hidden;
   background: url("../img/back/AI-Medical-imaging.png");
-  background-size: contain;
+  background-size: cover;
 
   /* border-bottom:1px solid rgb(56, 54, 54) ; */
 }
@@ -828,6 +875,13 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+.float-video{
+  float: right;
+}
+.btn-my:hover{
+  background-color: grey;
+}
+
 .about .video-box {
   
   background: url("../img/about.jpg") center center no-repeat;
